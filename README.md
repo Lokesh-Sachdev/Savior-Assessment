@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# [Live Site](https://deluxe-monstera-cb7845.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/Lokesh-Sachdev/Savior-Assessment/assets/109384819/628d5a28-038d-45e5-99fe-a309bea84f24)
+![image](https://github.com/Lokesh-Sachdev/Savior-Assessment/assets/109384819/8e0bd81d-0d56-48af-bc22-438cda94441b)
+![image](https://github.com/Lokesh-Sachdev/Savior-Assessment/assets/109384819/b813c203-ba37-44d3-b8bf-d330c58c5b76)
 
-## Available Scripts
+# React Machine Test
 
-In the project directory, you can run:
+This project is a solution to the machine test for evaluating proficiency in ReactJS development. The goal was to translate a Figma design into a functional web page with specific requirements.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Figma Design](#figmadesign)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Figma Design
 
-### `npm test`
+[Figma Design Link](https://www.figma.com/file/E8XrC29ES3SZtpg0qEUeEV/Machine-Test%3A-React-and-Next-JS-Developer?type=design&node-id=1-3&mode=design&t=O3gJIobdLPlMa08y-0)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Navigation links scroll smoothly to corresponding sections.
+- Header includes a logo, navigation menu, and a timer.
+- Main content section includes a heading, a paragraph, and an image.
+- Footer contains copyright information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/Lokesh-Sachdev/Savior-Assessment.git
+   ```
 
-### `npm run eject`
+2. Change into the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd react-card-app
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-### Code Splitting
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application is deployed using Netlify and can be accessed online at [Deployed Application Link](https://deluxe-monstera-cb7845.netlify.app/).
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please don't hesitate to reach out to me if you have any questions or need further clarification.
