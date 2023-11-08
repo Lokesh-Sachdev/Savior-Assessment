@@ -1,0 +1,51 @@
+@import '../../styles/_base.scss';
+
+.app__speakers {
+
+    .app__speakers-heading {
+        @extend %flex-center;
+        flex-direction: column;
+        text-align: center;
+        background-image: url(../../assets/images/speaker-bg.png), linear-gradient(87.02deg, #5603B4 -0.71%, #CB00FF 99.57%);
+        background-size: cover;
+        color: $white;
+
+        div {
+            max-width: 824px;
+            padding-top: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+
+            span {
+                font-family: 'Mazzard Bold';
+            }
+        }
+
+        h6 {
+            font-size: $p-text;
+            line-height: 34px;
+            font-family: 'Ethnocentric';
+            color: #E79FFF;
+
+            margin-bottom: 0.5rem;
+        }
+
+        svg {
+            display: block;
+        }
+    }
+
+    .app__speakers-container {
+        @extend %section-padding;
+        max-width: 1440px;
+        padding-top: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        row-gap: 2rem;
+
+        margin: 0 auto;
+    }
+}

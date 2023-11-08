@@ -1,0 +1,39 @@
+@import '../../styles/base';
+
+.app__faq {
+    @extend %section-padding;
+    padding-top: 6rem;
+    background-image: url(../../assets/images/faq_bg02.png), url(../../assets/images/faq_bg.png);
+    background-size: cover;
+    color: $white;
+    text-align: center;
+
+    .app__faq-heading {
+        h6 {
+            font-size: $p-text;
+            line-height: 21.6px;
+            font-family: 'Ethnocentric';
+            color: #727271;
+
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            span {
+                font-family: 'Mazzard Bold';
+                color: $purple-text;
+            }
+        }
+    }
+
+    .app__faq-container {
+        max-width: 1440px;
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        row-gap: 3rem;
+
+        margin: 0 auto;
+    }
+}

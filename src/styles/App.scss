@@ -1,0 +1,323 @@
+@import './base';
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: $p-text;
+}
+
+h1 {
+    font-size: $title-text;
+    line-height: 72px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+
+    li {
+        cursor: pointer;
+    }
+}
+
+.app__btn {
+    @extend %flex-center;
+    gap: 5px;
+    font-size: 14px;
+    line-height: 34px;
+    border: none;
+    outline: none;
+    padding: 6px 32px;
+
+    cursor: pointer;
+}
+
+// Responsiveness
+
+@media screen and (max-width: 1024px) {
+
+    .app__header {
+        .app__header-sponsers {
+            padding: 1rem 0;
+
+            div {
+                gap: 3rem;
+            }
+        }
+
+        .app__header-main {
+            background-position: center;
+
+            .app__header-content {
+                .app__header-footer {
+                    gap: 1rem;
+                    padding: 1rem;
+
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .app__speakers {
+        .app__speakers-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .app__banner01 {
+        height: auto;
+
+        .app__banner01-container {
+            padding: 1rem;
+            flex-direction: column;
+            gap: 1rem;
+
+        }
+    }
+
+    .app__faq {
+        padding-bottom: 3rem;
+
+        .app__faq-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .app__footer {
+        .app__footer-count {
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .app__footer-main {
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 45px;
+        line-height: 54px;
+    }
+
+    .app__header {
+        .app__header-sponsers {
+
+            div {
+                img {
+                    width: 60px;
+                    object-fit: scale-down;
+                }
+            }
+        }
+
+        .app__header-main {
+            .app__header-content {
+                padding: 2rem 3rem;
+
+                h1 {
+                    line-height: 63px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+                .app__timer {
+                    div {
+                        h1 {
+                            font-size: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .app__speakers {
+        .app__speakers-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .app__banner02 {
+        padding: 3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .app__header {
+        .app__header-main {
+            background-position: 65%;
+
+            .app__header-content {
+                .app__timer {
+                    div {
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+
+    .app__offercard {
+        .app__offercard-img {
+            width: 450px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+
+            .app__offercard-icon {
+                width: 100px;
+                height: 100px;
+
+                img {
+                    width: 55px;
+                }
+            }
+        }
+    }
+
+    .app__footer {
+
+        .app__footer-main {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+
+            div {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    h1 {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .app__header {
+        .app__header-main {
+            .app__header-content {
+                padding: 2rem 1rem;
+
+                h1 {
+                    line-height: 50px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .app__header-actions {
+                    gap: 1rem;
+                    margin: 1rem 0;
+                }
+
+                .app__header-footer {
+                    gap: 0;
+
+                    h2 {
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+
+                .app__timer {
+                    div {
+                        width: 60px;
+                        height: 90px;
+                        gap: 0;
+
+                        h1 {
+                            font-size: 35px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .app__about {
+        p {
+            font-size: 16px;
+        }
+
+        .app__about-img {
+            width: 420px;
+        }
+    }
+
+
+    .app__banner01 {
+        .app__banner01-container {
+            .app__banner01-content {
+                margin: 0;
+
+                .app__banner01-card {
+                    width: 200px;
+
+                    h3 {
+                        font-size: 70px;
+                        line-height: 100px;
+                    }
+
+                    p {
+                        font-size: $p-text;
+                    }
+                }
+            }
+        }
+    }
+
+    .app__speakers {
+        .app__speakers-heading {
+            div {
+                padding: 2rem 1rem;
+            }
+        }
+    }
+
+    .app__offercard {
+        .app__offercard-img {
+            width: 400px;
+        }
+    }
+
+    .app__footer {
+        .app__footer-count {
+            .app__timer {
+                div {
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+}

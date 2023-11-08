@@ -1,0 +1,31 @@
+@import '../../styles/base';
+
+.app__offercard {
+    max-width: 567px;
+    text-align: left;
+
+    .app__offercard-img {
+        position: relative;
+
+        .app__offercard-icon {
+            @extend %flex-center;
+            background-image: url(../../assets/images/offer_iconBG.png);
+            width: 130px;
+            height: 130px;
+
+            position: absolute;
+            bottom: 4px;
+        }
+    }
+
+    h3 {
+        font-family: 'Mazzard Bold';
+        font-size: 32px;
+        line-height: 44px;
+        margin: 2rem 0 1rem;
+    }
+
+    p {
+        line-height: 30px;
+    }
+}

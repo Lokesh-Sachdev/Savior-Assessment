@@ -1,0 +1,30 @@
+@import '../../styles/base';
+
+.app__banner02 {
+    @extend %flex-center;
+    flex-direction: column;
+    background-image: url(../../assets/images/banner02__bg2.png), url(../../assets/images/banner02__bg.png);
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    text-align: center;
+    padding: 5rem 0;
+
+    h1 {
+
+        span {
+            font-family: 'Mazzard Bold';
+        }
+    }
+
+    p {
+        line-height: 30px;
+        margin: 2rem 0;
+        max-width: 934px;
+    }
+
+    button {
+        font-weight: bold;
+    }
+
+}

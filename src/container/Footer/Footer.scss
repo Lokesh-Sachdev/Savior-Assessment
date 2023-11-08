@@ -1,0 +1,149 @@
+@import '../../styles/base';
+
+.app__footer {
+    @extend %section-padding;
+    padding-bottom: 0;
+    background-image: url(../../assets/images/faq_bg02.png), url(../../assets/images/faq_bg.png);
+    background-size: cover;
+    color: $white;
+    text-align: center;
+
+    .app__footer-count {
+        @extend %flex-center;
+        justify-content: space-between;
+        max-width: 1440px;
+        margin: 0 auto;
+
+
+        h2 {
+            font-size: 46px;
+            line-height: 60px;
+
+            span {
+                font-family: 'Mazzard Bold';
+                color: $purple-text;
+            }
+        }
+
+        .app__timer {
+            display: flex;
+            gap: 10px;
+
+            div {
+                width: 111px;
+            }
+
+            h1 {
+                font-family: 'Mazzard Bold';
+            }
+
+            p {
+                font-family: 'Mazzard Bold';
+                font-size: 11px;
+                line-height: 34px;
+                color: #626F7E;
+            }
+
+            span {
+                font-size: 60px;
+            }
+        }
+    }
+
+    .app__footer-main {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        margin: 10rem auto 2rem auto;
+        max-width: 1440px;
+
+        .app__footer-logo {
+            width: 149px;
+            height: 36px;
+            margin-bottom: 1rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .app__footer-contact {
+            p {
+                margin-bottom: 1rem;
+            }
+
+            svg {
+                font-size: 14px;
+                margin-right: 1rem;
+            }
+        }
+
+        div {
+            &:first-child {
+                max-width: 310px;
+            }
+
+            &:last-child {
+                max-width: 227px;
+
+                div {
+                    @extend %flex-center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $white;
+                    padding-bottom: 5px;
+                    margin-bottom: 1rem;
+
+                }
+
+                p {
+
+                    &:last-child {
+                        font-size: 12px;
+                        line-height: 20px;
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            font-family: 'Mazzard Bold';
+            font-size: 20px;
+            line-height: 30px;
+            color: $purple-text;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        p,
+        li {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        li {
+            margin-bottom: 4px
+        }
+    }
+
+    .app__footer-trademark {
+        @extend %flex-center;
+        padding: 8px 0;
+        justify-content: space-between;
+        border-top: 1px solid rgba(255, 255, 255, 0.26);
+
+        svg {
+            font-size: 11px;
+            color: #CB00FF;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 28px;
+            color: rgba(255, 255, 255, 0.56);
+        }
+    }
+}

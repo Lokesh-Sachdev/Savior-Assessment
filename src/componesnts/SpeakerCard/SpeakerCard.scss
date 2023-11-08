@@ -1,0 +1,30 @@
+@import '../../styles/base';
+
+.app__speakerCard {
+    text-align: center;
+
+    h3 {
+        font-size: 30px;
+        font-family: 'Mazzard Bold';
+        line-height: 50px;
+        color: $purple-text;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 50px;
+        text-transform: uppercase;
+
+        color: #626F7E;
+    }
+
+    div {
+        background: #f1f1f1;
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        gap: 10px;
+        padding: 8px 24px;
+    }
+}

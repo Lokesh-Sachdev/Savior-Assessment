@@ -1,0 +1,58 @@
+@import '../../styles/base';
+
+.app__travel {
+    @extend %section-padding;
+    color: $black-text;
+
+    .app__travel-content {
+        .app__travel-heading {
+            max-width: 1440px;
+            margin: 0 auto;
+
+            h1 {
+                span {
+                    color: $purple-text;
+                    font-family: 'Mazzard Bold';
+                }
+            }
+
+            p {
+                color: $grey-text;
+                max-width: 850px;
+            }
+
+
+            div {
+                &:first-child {
+                    @extend %flex-center;
+                    justify-content: space-between;
+                }
+            }
+
+            .app__travel-price {
+                @extend %flex-center;
+                margin: 1rem 0;
+
+                span {
+                    font-family: 'Ethnocentric';
+                    font-size: 14px;
+                    color: $purple-text;
+                }
+
+                div {
+                    height: 2px;
+                    width: calc(100% - 170px);
+                    background-color: black;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .app__travel-tickets {
+            @extend %flex-center;
+            gap: 2rem;
+
+            margin-top: 3rem;
+        }
+    }
+}

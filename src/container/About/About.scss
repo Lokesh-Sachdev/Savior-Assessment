@@ -1,0 +1,52 @@
+@import '../../styles/base';
+
+.app__about {
+    @extend %flex-center;
+    @extend %section-padding;
+    align-items: flex-start;
+    gap: 2rem;
+    color: $black-text;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+            max-width: 582px;
+        }
+    }
+
+    h1 {
+        margin-bottom: 2rem;
+
+        span {
+            color: $purple-text;
+            font-family: 'Mazzard Bold';
+        }
+    }
+
+    h6 {
+        font-size: $p-text;
+        line-height: 21.6px;
+        font-family: 'Ethnocentric';
+        color: #C7C0B6;
+
+        margin-bottom: 0.5rem;
+    }
+
+    .app__about-img {
+        flex: 1 1;
+    }
+
+    p {
+        font-size: $p-text;
+        line-height: 30px;
+        color: $grey-text;
+
+        margin-bottom: 2rem;
+
+        &:last-child {
+            font-family: 'Mazzard Bold';
+        }
+    }
+}

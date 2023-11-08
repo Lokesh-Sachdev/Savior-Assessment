@@ -1,0 +1,162 @@
+@import '../../styles/base';
+
+.app__header {
+
+    .app__header-main {
+        background-image: url('../../assets/images/header__bg.png'), url('../../assets/images/header__bg02.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .app__header-content {
+            max-width: 1440px;
+            margin: 0 auto;
+            @extend %flex-center;
+            padding: 2rem 6rem;
+            align-items: flex-start;
+            flex-direction: column;
+            color: $white;
+
+            h1 {
+                font-family: 'Ethnocentric';
+                // font-size: 70px;
+                font-weight: 400;
+                line-height: 84px;
+                letter-spacing: 0.08em;
+
+                &:nth-child(2) {
+                    text-shadow: 0px 0px 20px #E79FFF;
+
+                }
+            }
+
+            p {
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 34px;
+            }
+
+            .app__header-speakers {
+                @extend %flex-center;
+                position: relative;
+                padding: 1rem;
+                margin: 1rem 0;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+
+                    &:nth-child(2) {
+                        left: 40px;
+                        z-index: 2;
+                    }
+
+                    &:nth-child(3) {
+                        left: 80px;
+                        z-index: 3;
+                    }
+                }
+
+                p {
+                    margin-left: 150px;
+                }
+
+                svg {
+                    color: $purple-text;
+                    font-size: 20px;
+                    margin: 5px 0 0 10px;
+                }
+
+            }
+
+            .app__header-actions {
+                @extend %flex-center;
+                gap: 2rem;
+                margin: 2rem 0;
+
+                button {
+                    font-weight: 500;
+
+                    &:last-child {
+                        background: linear-gradient(87.44deg, #8D36DF 23.55%, #580A91 93.67%);
+                        box-shadow: 0px 15px 22px 0px #00000040;
+                        color: $white;
+                    }
+                }
+            }
+
+            .app__header-footer {
+                @extend %flex-center;
+                gap: 2rem;
+                background: $white;
+                color: $black-text;
+                padding: 2rem;
+
+                border-radius: 200px;
+
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                    font-family: 'Mazzard Bold';
+                }
+
+                button {
+                    background: linear-gradient(84.65deg, #CB00FF 11.58%, #5603B4 90.82%);
+                }
+            }
+
+            .app__timer {
+                display: flex;
+                gap: 1rem;
+
+                div {
+                    @extend %flex-center;
+                    flex-direction: column;
+                    background: linear-gradient(180deg, #CB00FF 0%, rgba(86, 3, 180, 0) 95.83%);
+                    width: 110px;
+                    height: 110px;
+                    border-radius: 10px;
+                    gap: 12px;
+
+                    h1 {
+                        font-family: 'Mazzard bold';
+                        font-size: 66px;
+                        line-height: 34px;
+                        letter-spacing: 0.04em;
+                        text-align: center;
+
+                        margin-top: 10px;
+                    }
+
+                    p {
+                        font-size: 11px;
+                        font-weight: 600;
+                        line-height: 34px;
+                        letter-spacing: 0.06em;
+                        text-align: center;
+
+                        color: #626F7E;
+                    }
+                }
+
+                span {
+                    font-size: 66px
+                }
+            }
+        }
+    }
+
+    .app__header-sponsers {
+
+        @extend %flex-center;
+        background-color: $black-text;
+
+        padding: 2rem 0;
+
+        div {
+            @extend %flex-center;
+            gap: 5rem;
+        }
+    }
+}

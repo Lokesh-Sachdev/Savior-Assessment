@@ -1,0 +1,30 @@
+// Variables
+
+$grey-text: #2D3239;
+$black-text: #000014;
+
+$purple-text: #8D36DF;
+
+$white: #fff;
+
+$title-text: 60px;
+$p-text: 18px;
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%section-padding {
+    padding: 4rem 6rem;
+
+    @media screen and (max-width: 1024px) {
+        padding: 2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 1rem;
+    }
+}
